@@ -1,0 +1,18 @@
+<head>
+  <title>pubsub</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> mytemp}}
+</body>
+
+<template name="mytemp">
+{{#if subcribedDataNotAvailable}}
+   <h1> data loading ... </h1>
+ {{else}}
+  {{#each employeeNumbers }}
+    AA:  {{empId}} <br>
+  {{/each}}
+ {{/if}}
+</template>
